@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <title>Week 12: Unit Final - CRUD Application</title>
+</head>
+<body>
+  <div class="container">
+    <h3>Player List</h3>
+    <form id="userForm" class="pb-2">
+      <div>
+        <label for="newUserName">Username</label>
+        <input
+          type="text"
+          class=""
+          id="newUserName"
+          placeholder="Username"
+          required
+        />
+      </div>
+      <div>
+        <label for="newFullName">Full Name</label>
+        <input
+          type="text"
+          class=""
+          id="newFullName"
+          placeholder="Jane Doe"
+          required
+        />
+      </div>
+      <div>
+        <label for="newEmail">Email</label>
+        <input
+          type="email"
+          class=""
+          id="newEmail"
+          placeholder="user@email.com"
+          required
+        />
+      </div>
+      <button id="submitUser">Submit</button>
+    </form>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Username</th>
+          <th>Full Name</th>
+          <th>Email</th>
+          <th>Edit</th>
+        </tr>
+      </thead>
+
+      <tbody></tbody>
+    </table>
+
+  </div>
+  
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
